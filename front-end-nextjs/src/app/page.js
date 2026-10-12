@@ -30,7 +30,8 @@ export default function Home() {
         />
         <button type="submit" style={styles.button}>Generate QR Code</button>
       </form>
-      {qrCodeUrl && <img src={qrCodeUrl} alt="QR Code" style={styles.qrCode} />}
+      {/* {qrCodeUrl && <img src={qrCodeUrl} alt="QR Code" style={styles.qrCode} />} */}
+      <p>QR Code: {qrCodeUrl}</p>
     </div>
   );
 }
