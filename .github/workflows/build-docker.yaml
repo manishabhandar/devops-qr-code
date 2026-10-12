@@ -12,7 +12,7 @@ jobs:
         run: docker build ./api/ -t bmanisha/devops-qr-code-backend:latest
       - name: Push image to Docker Hub
         run: |
-          docker login -u bmanisha -p ${{ secrets.DOCKER_HUB_TOKEN }}
+          docker login --username bmanisha --password ${{ secrets.DOCKER_HUB_TOKEN }}
           docker push bmanisha/devops-qr-code-backend:latest 
 
      
